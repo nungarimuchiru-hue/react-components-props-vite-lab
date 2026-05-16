@@ -1,10 +1,14 @@
-function Article({ title, data = "January 1, 1970", preview }) {
-    return (
-        <article>
-            <h3>{title}</h3>
-            <small>{date}</small>
-            <p>{preview}</p>
-        </article>
-    );
+import React from "react";
+
+// FIXED: Changed 'data' to 'date' so it matches the variable used inside the JSX layout
+function Article({ title, date = "January 1, 1970", preview }) {
+  return (
+    <article>
+      <h3>{title}</h3>
+      <small>{date}</small>
+      <p>{preview}</p>
+    </article>
+  );
 }
+
 export default Article;
